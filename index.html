@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encode</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            color: #4a90e2;
+        }
+
+        .input-section, .output-section {
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="number"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #357abd;
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            max-height: 200px;
+        }
+
+        .output-section pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Encode JSON || 672023021</h1>
+
+        <div class="input-section">
+            <h2>Form User</h2>
+            <br><br>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" placeholder="Masukkan Nama">
+            <br>
+            <label for="umur">Umur:</label>
+            <input type="number" id="umur" placeholder="Masukkan Umur">
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Masukkan Email">
+            <br>
+            <label for="alamat">Alamat:</label>
+            <input type="text" id="alamat" placeholder="Masukkan alamat rumah anda">
+            <br>
+            <label for="kota">Kota:</label>
+            <input type="text" id="kota" placeholder="Kota">
+            <br>
+            <label for="Negara">Negara:</label>
+            <input type="text" id="negara" placeholder="Negara">
+            <br><br>
+            <button id="encodeButton">Encode to JSON</button>
+        </div>
+
+        <div class="output-section">
+            <h2>Encoded JSON Output:</h2>
+            <pre id="jsonOutput"></pre>
+        </div>
+    </div>
+</body>
+</html>
