@@ -1,4 +1,4 @@
-// Function to encode form data into JSON
+
 function encodeToJson() {
     const name = document.getElementById('nama').value;
     const age = document.getElementById('umur').value;
